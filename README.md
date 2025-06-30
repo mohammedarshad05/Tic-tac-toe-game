@@ -45,9 +45,3 @@ The bot uses simple strategy:
 2. 🛡️ Tries to **block** the player
 3. 🎲 Else, makes a **random move**
 
-> This makes it smart but beatable – perfect for casual play!
-
----
-
-## 📂 Folder Structure
-
