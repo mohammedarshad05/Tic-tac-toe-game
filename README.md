@@ -8,7 +8,7 @@ A sleek, modern, and responsive Tic Tac Toe game built with **React + TypeScript
 
 ## 🚀 Live Demo
 
-🔗 [View Live Game](https://your-deployment-link.vercel.app)
+🔗 [View Live Game](https://tic-tac-toe-game-ashy-psi.vercel.app/)
 
 📸 Follow me on [Instagram @ot.arsh](https://www.instagram.com/ot.arsh/)
 
