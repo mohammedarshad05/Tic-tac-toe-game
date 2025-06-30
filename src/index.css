@@ -1,0 +1,142 @@
+/* index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1e1e2f);
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e2f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.2);
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.insta-link {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.insta-link:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.insta-icon {
+  font-size: 16px;
+}
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --card-bg: #ffffff;
+  --border-color: #222;
+  --accent: #00c8ff;
+}
+
+[data-theme='dark'] {
+  --bg-color: #0f0f0f;
+  --text-color: #eee;
+  --card-bg: #1e1e2f;
+  --border-color: #0ff;
+  --accent: #0ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 0 25px var(--accent);
+}
+
+.square {
+  background-color: var(--card-bg);
+  color: var(--accent);
+  border: 2px solid var(--border-color);
+}
+
+.result button,
+.mode-btn,
+.back-btn,
+.theme-toggle {
+  background-color: var(--bg-color);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 8px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .mode-btn,
+  .back-btn,
+  .result button,
+  .theme-toggle {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .app {
+    padding: 20px;
+  }
+}
+
+
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.theme-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    #fff 50%,
+    #000 50%
+  );
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotate(20deg) scale(1.1);
+}
